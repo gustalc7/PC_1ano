@@ -1,0 +1,77 @@
+body{
+    color: white;
+    background: rgb(51, 51, 51);
+    margin: 0px;
+    margin-bottom: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px rgb(0, 73, 168);
+  padding: 10px 20px;
+  height: 80px; /* define uma altura fixa menor */
+  background-color: rgb(51, 51, 51); /* garantir que o fundo do header fique uniforme */
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.logo {
+  color: rgb(0, 65, 149); /* azul */
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+section{
+    background: rgb(0, 65, 149);
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.chamada-texto{
+    margin-right: 5%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.barra-pesquisa {
+  width: 350px;
+  height: 120px;
+  margin: 0;
+  position: static; /* remove o alinhamento absoluto/relativo antigo */
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+img {
+    height: 200px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.categoria {
+background: rgb(51, 51, 51);
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.categoria-videos img {
+ opacity: 0.5;
+}
+
+.categoria-videos img:hover {
+ opacity: 1.0;
+ border: 2px solid rgb(81, 143, 225) ;
+}
