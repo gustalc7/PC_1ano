@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Missão Órion</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="reuniao-passo0.png" alt="Reunião entre agentes da base espacial">
+            <p>Durante uma reunião importante na base espacial,
+                você é informado que a Estação Órion perdeu contato.
+                O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Embarcar imediatamente</button>
+            <button class="btn-proximo" data-proximo="10">Recusar a missão</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="aurora-passo1.png" alt="Astronauta embarcando na nave espacial">
+            <p>Você embarca na nave Aurora e chega à órbita.
+                A estação está girando lentamente.</p>
+            <button class="btn-proximo" data-proximo="2">Acoplar entrada principal</button>
+            <button class="btn-proximo" data-proximo="3">Entrar pelo módulo de pesquisa</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="passo2.png" alt="Corredor vazio da estação espacial">
+            <p>Pela entrada principal, você vê corredores vazios.
+                Há luzes piscando.</p>
+            <button class="btn-proximo" data-proximo="4">Ir à sala de controle</button>
+            <button class="btn-proximo" data-proximo="5">Ir ao reator central</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <img src="passo3.png" alt="Módulo de pesquisa">
+            <p>Pelo módulo de pesquisa, experimentos flutuam.
+                Há um painel com códigos estranhos.</p>
+            <button class="btn-proximo" data-proximo="6">Decifrar códigos</button>
+            <button class="btn-proximo" data-proximo="4">Seguir para sala de controle</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+           <img src="passo4.png" alt="Astronauta lendo o diário de bordo">
+            <p>Na sala de controle, você encontra o diário de bordo.
+                Ele indica que o problema está no reator.</p>
+            <button class="btn-proximo" data-proximo="5">Ir ao reator</button>
+            <button class="btn-proximo" data-proximo="9">Enviar pedido de resgate</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="passo5.png" alt="Reator central com vazamentos de energia">
+            <p>No reator, há vazamento de energia, pois um cabo se rompeu!</p>
+            <button class="btn-proximo" data-proximo="7">Desativar núcleo manualmente</button>
+            <button class="btn-proximo" data-proximo="8">Ativar contenção automática</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+           <img src="passo6.png" alt="Astronauta decifrando os códigos do painel">
+            <p>Os códigos revelam passagem secreta ao reator.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir pela passagem</button>
+            <button class="btn-proximo" data-proximo="11">Voltar e acessar entrada principal</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="passo7.png" alt="Astronauta estabilizando o reator">
+            <p>Você estabilizou o núcleo e a estação foi salva!
+                FIM
+            </p>
+        </div>
+
+        <div class="passo" id="passo-8">
+           <img src="passo8.png" alt="Reator esplodindo">
+            <p>O protocolo automático falha.
+                A estação explode.
+                FIM</p>
+            <button class="btn-proximo" data-proximo="5">Voltar</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+           <img src="passo9.png" alt="O resgate não chega a tempo">
+            <p>O resgate não chega a tempo.
+                A estação se perde.
+                FIM</p>
+            <button class="btn-proximo" data-proximo="4">Voltar</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="passo10.png" alt="Astronauta recusando a missão">
+            <p>Você recusa a missão.
+                Sempre se pergunta o que teria acontecido.
+                FIM</p>
+            <button class="btn-proximo" data-proximo="0">Voltar</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Você retorna à entrada principal e segue
+                o caminho até o reator.</p>
+            <button class="btn-proximo" data-proximo="5">Continuar</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
